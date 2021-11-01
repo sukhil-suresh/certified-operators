@@ -1814,7 +1814,7 @@ spec:
                 - '*'
           serviceAccountName: default
       deployments:
-        - name: k10-helm-operator-controller-manager
+        - name: k10-kasten-operator-controller-manager
           spec:
             replicas: 1
             selector:
@@ -1841,7 +1841,7 @@ spec:
                   - args:
                       - --metrics-addr=127.0.0.1:8080
                       - --enable-leader-election
-                      - --leader-election-id=k10-helm-operator
+                      - --leader-election-id=k10-kasten-operator
                     image: registry.connect.redhat.com/kasten/k10-operator:4.5.1
                     name: manager
                     resources:
@@ -1937,7 +1937,7 @@ spec:
     - data-management
   links:
     - name: K10 Helm Operator
-      url: https://k10-helm-operator.domain
+      url: https://k10-kasten-operator.domain
   maintainers:
     - email: travis@kasten.io
       name: Travis
@@ -1945,4 +1945,4 @@ spec:
   provider:
     name: Kasten by Veeam, kasten.io
   version: 4.5.1
-  replaces: k10-helm-operator.2.5.18
+  replaces: k10-kasten-operator.2.5.18

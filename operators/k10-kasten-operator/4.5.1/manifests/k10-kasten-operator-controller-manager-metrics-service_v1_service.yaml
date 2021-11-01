@@ -5,7 +5,7 @@ metadata:
   creationTimestamp: null
   labels:
     control-plane: controller-manager
-  name: k10-helm-operator-controller-manager-metrics-service
+  name: k10-kasten-operator-controller-manager-metrics-service
 spec:
   ports:
   - name: https

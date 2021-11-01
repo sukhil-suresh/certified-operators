@@ -3,7 +3,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   creationTimestamp: null
-  name: k10-helm-operator-metrics-reader
+  name: k10-kasten-operator-metrics-reader
 rules:
 - nonResourceURLs:
   - /metrics
