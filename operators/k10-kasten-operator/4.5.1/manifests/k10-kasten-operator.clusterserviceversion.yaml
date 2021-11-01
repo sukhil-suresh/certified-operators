@@ -1945,4 +1945,4 @@ spec:
   provider:
     name: Kasten by Veeam, kasten.io
   version: 4.5.1
-  replaces: k10-kasten-operator.2.5.18
+  replaces: k10-helm-operator.2.5.18
